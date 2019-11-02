@@ -1,0 +1,17 @@
+public static void main(String[] args) {
+     String sentence ="My Name Is Salim.";
+     
+     int NumberOfCarachters = 0;
+     int i=0;
+     while (sentence.charAt(i)!='.')
+     {
+         NumberOfCarachters++;
+         i++;
+         
+             
+     }
+     NumberOfCarachters++;
+     
+     System.out.println(NumberOfCarachters);
+    }
+     

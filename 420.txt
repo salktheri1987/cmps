@@ -1,0 +1,108 @@
+----------------virtual environment--------------------
+
+mkvirtualenv --python=/usr/bin/python3.7 pro1
+
+----------------Installing Django------------------------
+
+pip3 install Django
+
+----------------Create a new project -----------------
+
+django-admin.py startproject pro420 
+
+
+----------------------- index.html--------------------------
+
+<h1>home page</h1>
+<h1>aboutus page</h1>
+<p>1111</p>
+---------------------settings.py-------------------------------
+
+os.path.join(BASE_DIR, 'templates')
+
+
+-----------------------views.py----------------------------
+
+from django.shortcuts import render
+
+
+def index(request):
+    return render(request, "index.html")
+
+
+def aboutus(request):
+    return render(request, "aboutus.html")
+
+
+def ccc(request):
+    return render(request, "ccc.html")
+
+
+-----------------------urls.py-------------------------------
+
+
+from django.contrib import admin
+from django.urls import path
+from .views import index 
+
+
+urlpatterns = [
+    path('', index),
+    path('aboutus/', aboutus),
+    path('ccc/', ccc),
+    path('admin/', admin.site.urls),
+]
+-----------------------------------------------------------
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+
+
+
+
+
+pip3 install mysqlclient
+
+
+-------------------------------------------------------
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '201701072$mydb',
+        'USER':'201701072',
+        'PASSWORD':'Gbm1985!',
+        'HOST':'201701072.mysql.pythonanywhere-services.com',
+        'PORT':'3306',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
